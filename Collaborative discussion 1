@@ -1,0 +1,27 @@
+Corazón, a medical tech startup, offers an implantable heart monitoring device with a user-friendly app for wireless control and data storage, earning market share through its emphasis on patient data security. It also collaborates with charities to provide free or reduced access to patients in need (ACM, n.d). 
+
+The company's dedication to securing patient information and adhering to regulatory standards reflects Principle 1.1, which emphasizes contributing to society and human well-being. Additionally, their use of standard cryptographic algorithms and engagement in vulnerability disclosure align with the principles of robust security (2.9) and comprehensive risk analysis (2.5). Corazón's commitment to ongoing improvement and collaboration with charities also demonstrates the integration of technology into societal infrastructure (3.7).
+
+In the provided scenario, while the vulnerability stemming from the hard-coded value in the implant presents minimal risk of an attack, the company adhered to ACM Code 3.7 by proactively inviting independent assessment. Upon identification of the vulnerability, they promptly took appropriate measures to address and mitigate the risk.
+
+Faulty medical implants can lead to a range of personal and social issues, including unexpected pain or discomfort, changes in device performance, physical damage to the device, infection or unusual physical reactions, altered mobility or function, erosion of trust in healthcare systems, financial burdens on patients due to additional medical expenses and legal battles, compromised quality of life for affected individuals, and potential strain on relationships and support networks as patients navigate the challenges associated with device failure (Maniatopoulos et al., 2019). From a legal perspective, while the vulnerability may not pose immediate harm, failure to address it could potentially lead to liability issues if exploited in the future. Additionally, there may be regulatory implications regarding the standards for medical device security and patient safety as per FDA (FDA, 2023).
+
+The following BCS principles aligns with the above mentioned ACM principles.
+
+Have due regard for public health, privacy, security, and wellbeing of others and the environment.
+Develop your professional knowledge, skills, and competence on a continuing basis, maintaining awareness of technological developments, procedures, and standards that are relevant to your field.
+Carry out your professional responsibilities with due care and diligence in accordance with the relevant authority’s requirements while exercising your professional judgment at all times.
+Accept your personal duty to uphold the reputation of the profession and not take any action which could bring the profession into disrepute (BCS, n.d).
+Corazón's adherence to ACM and BCS ethical principles, demonstrated through their commitment to patient data security and proactive vulnerability management, reflects their dedication to professionalism and societal well-being.
+
+
+
+References:
+
+ACM ethics (no date). Case: Medical implant risk analysis. Available at: https://ethics.acm.org/code-of-ethics/using-the-code/case-medical-implant-risk-analysis/ [Accessed 18 March 2024]. 
+
+BCS (no date). BCS Code of Conduct. Available from: https://www.bcs.org/membership-and-registrations/become-a-member/bcs-code-of-conduct [Accessed 18 March 2024].
+
+FDA (2023) Medical device reporting (MDR): How to report medical device problems. Available at: https://www.fda.gov/medical-devices/medical-device-safety/medical-device-reporting-mdr-how-report-medical-device-problems# [Accessed 18 March 2024]. 
+
+Maniatopoulos, G. et al. (2019) ‘Framing the failure of medical implants: Media representations of the ASR hip replacements in the UK’, Health Expectations, 22(3), pp. 518–527. doi:10.1111/hex.12877. 
