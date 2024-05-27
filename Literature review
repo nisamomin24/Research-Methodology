@@ -1,0 +1,93 @@
+Introduction: 
+The Internet of Things (IoT) connects physical and virtual objects equipped with sensors, software, and various technologies, allowing them to share data over the Internet (Altulaihan et al., 2022; Lee, 2020; Chowdhury, M et al., 2019). It begins by uniquely identifying individual objects through globally accessible identifiers. These objects, with internet connectivity, can exchange data interactively with other objects, collectively known as "things" (Tweneboah-Koduah et al., 2017). IoT has evolved beyond its initial stages and is now seen as a revolutionary technology driving the Internet's transformation into a fully integrated "Internet of Things" (IoT). This advancement is driven by the increasing adoption and integration of wireless network technologies, such as Wireless Sensor Networks (WSN), Radio Frequency Identification (RFID) tags, and actuating nodes (Tweneboah-Koduah et al., 2017).
+By integrating various technologies, connected and autonomous vehicles (CAVs) have been conceptualized to improve efficiency of transportation, minimize accidents, enhance safety, provide diverse mobility service options, and mitigate environmental impacts (Sun et al., 2022).The adoption of the CAV paradigm is projected to advance steadily and incrementally throughout the 2020s and 2030s, driven by enhancements in infrastructure and communication technologies. CAVs’s global market is burgeoning and anticipated to become one of the largest markets worldwide, with estimations suggesting it could reach a value of $7 trillion by 2050 (Sun et al., 2022). The widespread proliferation of connected devices within the IoT has generated significant demand for strong security measures. This is in response to the increasing need to safeguard millions, if not billions, of connected devices and services worldwide (Abomhara & Koien, 2015). Implementing Connected and Autonomous Vehicles (CAVs) in real-world environments is significantly challenged by security risks. As Connected and Autonomous Vehicles (CAVs) manage larger volumes of data and sensitive information, the exchange of data between vehicles raises the potential for security risks for users. These risks may take different forms, including attacks on vehicle-to-everything networks, in-vehicle network breaches, data storage vulnerabilities, machine learning system exploitation, manipulation attempts, and targeted assaults on passwords and encryption keys (Karuppiah et al., 2024). 
+Addressing and mitigating all types of attacks can indeed pose challenges for automotive designers, leading to complexities in the design process (Karuppiah et al., 2024).
+
+
+Significance of the research:
+Continuous research in cybersecurity threats in IoT for vehicle automation is crucial as it directly influences the decisions taken by stakeholders and technology developers. Understanding the evolving threat landscape and identifying vulnerabilities through research enables stakeholders, including manufacturers, regulators, and consumers, to make informed decisions regarding the implementation of security measures and the adoption of IoT-enabled vehicle automation technologies. Developers rely on research findings to design robust security solutions that mitigate risks and enhance the resilience of systems against cyber threats. Moreover, research insights inform the development of industry standards and regulatory frameworks, guiding stakeholders in compliance efforts and shaping policy decisions to address cybersecurity challenges effectively. It's worth noting that while this specific research topic has been explored by many researchers, it remains an ongoing area of investigation, highlighting the persistent need for advancements and insights in cybersecurity for IoT-enabled vehicle automation.
+Related Work:
+In the realm of connected and automated vehicles (CAVs) and their impact on intelligent transportation systems (ITS), prior research by Karuppiah et al. (2024) and Garakani et al. (2018) sheds light on their transformative potential and broader societal implications such as transportation efficiency and safety. Karuppiah et al. (2024) specifically underscore the importance of CAVs in addressing urban mobility challenges such as traffic congestion and accidents, positioning them as a promising solution. On the other hand, Garakani et al. (2018) extend the discussion to emphasize the broader societal benefits of autonomous vehicles (AVs), including enhanced passenger well-being and accessibility, particularly for aging populations.
+In parallel, Sun et al. (2022) focus on the cybersecurity challenges inherent in the widespread adoption of CAVs, underscoring the critical need for research aimed at developing strategies to mitigate these risks. Their survey on the cybersecurity of CAVs addresses the impact of cyber threats on RF sensors and wireless technologies, shedding light on the vulnerabilities present in these advanced automotive systems.
+Connected and automated vehicles:
+In examining the role of connected and automated vehicles (CAVs), Pascale et al. (2021) delve into the intricate components that enable their functioning. They emphasize the reliance on sensors such as ultrasonic sensors, radar, and lidar for detecting and measuring the dynamics of surrounding vehicles. Additionally, his research highlights the pivotal role of the Global Positioning System (GPS) in providing accurate location-based services, essential for navigation and localization on predefined road maps. They also discuss techniques like beam steering and null forming, which enhance GPS signal tracking.
+Similarly, Sun et al. (2022) provides insights into the technological framework of CAVs, focusing on their sensory capabilities and communication infrastructure. They elaborate on the role of cameras in capturing visual data, processed using computer vision algorithms for real-time obstacle detection and lane monitoring. Moreover, Sun et al. (2022) shed light on the on-board unit (OBU), functioning as the vehicle's computer and providing essential services like data security and internet protocol mobility. While Pascale et al., (2021) emphasize the role of roadside units as communication nodes facilitating secure applications and internet connectivity, Sun et al., (2022) provide a broader perspective on the OBU's functions and its interaction with the application unit.
+The Architecture of IoT in CAVs:
+The architecture of Connected and Autonomous Vehicles (CAVs) comprises multiple layers, each serving specific functions and presenting distinct security challenges.
+Chowdhury, Islam, and Khan (2019) emphasize the importance of real-time monitoring and detection of suspicious activities in CAVs through the implementation of an Intrusion Detection System (IDS). They highlight the significance of securing the Perception Layer, which includes sensors like cameras, radar, lidar, and ultrasonic sensors. Security risks in this layer encompass issues with wireless sensor connectivity, physical tampering of sensor nodes, and vulnerabilities due to resource constraints. In contrast, Altulaihan et al. (2022) shed light on the Business Layer, which oversees the overall CAV ecosystem, managing applications, business models, and user privacy policies.
+The Network Layer, responsible for transmitting data and enabling communication between vehicles, roadside units, and servers, is susceptible to various attacks, as identified by Lee (2020). These include denial of service, eavesdropping on communications, and traffic analysis. Furthermore, Altulaihan et al. (2022) underscore the importance of user data privacy and authentication mechanism consistency across applications at the Application Layer. However, Tweneboah-Koduah et al. (2017) argue that the Application Layer also faces challenges related to performance impacts from numerous connected vehicles.
+Addressing security threats at the Transport Layer is crucial, as outlined by Lee (2020). Threats in this layer include de-synchronization attacks, flooding attacks, insecure data transit, and scalable key management issues. Similarly, Altulaihan et al. (2022) emphasize the need for robust security measures tailored to the CAV environment to ensure safe and reliable operation. Additionally, Karuppiah et al. (2024) discuss the significance of securing the Processing Layer, which analyzes and processes large volumes of real-time data from sensors. They highlight the integration of information from lower layers to make driving decisions, utilizing cloud computing and big data processing capabilities.
+ 
+Cybersecurity attacks on the CAVs:
+Connected and Autonomous Vehicles (CAVs) are complex systems composed of various layers and components that work together to enable autonomous driving capabilities. However, each layer and component are vulnerable to different types of cyber-attacks that can potentially impact the overall security and safety of the CAV system. The table below outlines the different types of attacks that CAVs may face, their potential impacts, and the specific layers or components that could be targeted by these attacks. Understanding these attack vectors is crucial for developing robust security measures and safeguarding the integrity of CAV systems.
+
+Table 1: Cybersecurity attacks on CAVs (Sun et al., 2022; Chowdhury, M et al., 2019; Islam et al., 2023)
+Attack Type	Impact	Part of CAVs Impacted
+Remote sensor attacks	Disrupt/spoof sensor inputs	Perception Layer (Sensors)
+GPS spoofing attacks	Manipulate the received GPS signals	Perception Layer (GPS)
+Location tracing attacks	Discover behaviors and sensitive locations	Application Layer (Privacy)
+Insecure wireless attacks	Open gateways, exploitation vulnerabilities	Network Layer
+V2X and 5G/LTE attacks	Disrupt communications, cause privacy erosion	Network Layer, Application Layer (Privacy)
+ECU software/firmware attacks	Gain information, corrupt operations, degrade performance, launch remote attacks	Vehicle ECUs, Processing Layer
+Integrated business/services attacks	Gain third-party access, propagated errors, impact other vehicle systems	Business Layer, Processing Layer
+Malicious software/firmware DOS attacks	Make system unstable, resource starvation	Processing Layer, Application Layer
+Impersonation attacks	Pose/mimic as a trusted, modified received messages	Network Layer, Application Layer (Authentication)
+Replay attacks (vehicle to everything attacks)	Capture the legitimate, indelible sessions and compromise transportation safety	Network Layer, Application Layer (Authentication)
+Routing attacks	Disrupt the optimal routing, degrade route-mesh metrics	Network Layer
+Data falsification attacks	Mislead sensory sensors and results in fatalities	Perception Layer (Sensors)
+Geolocation/GPS attacks	Leak actual identity/GPS privacy, global accuracy impact	Perception Layer (GPS), Application Layer (Privacy)
+Password and key attacks	Crack password or key	Network Layer, Application Layer (Authentication)
+Infrastructure attacks	Cut off the communication in the infrastructure	Network Layer
+Sybil attacks	Cause hazardous conditions and vehicle safety problems	Network Layer, Application Layer (Safety)
+Attacks on machine learning systems	Modify the training algorithms	Processing Layer (ML Models) 
+
+Cybersecurity framework:
+In their exploration of cybersecurity frameworks for autonomous vehicles (AVs), both Lee (2020) and Asaju (2024) underscore the pivotal role of established standards such as ISO/SAE 21434, NIST CSF, and AUTOSAR SecOC in fortifying AV systems within smart city environments. Lee (2020) provides a comprehensive overview of these frameworks, highlighting their significance in elevating transportation security within smart city ecosystems. ISO/SAE 21434, a collaborative effort by ISO and SAE, focuses on integrating cybersecurity into automotive systems, advocating for a risk-based approach and robust security development lifecycle (SDL) practices. Similarly, NIST CSF offers adaptable principles for managing cybersecurity risks in organizations, emphasizing safeguards, continuous monitoring, and incident response plans. AUTOSAR SecOC addresses cybersecurity challenges in AVs by securing in-vehicle communication networks through mechanisms like secure channels and cryptographic algorithms.
+In contrast, Asaju delves deeper into the specifics of these frameworks, offering insights into their implementation and impact. While Lee's discussion provides a broader perspective on the importance of cybersecurity frameworks in intelligent transportation systems, Asaju's analysis offers a more specialized viewpoint, focusing specifically on cybersecurity challenges and solutions within AV systems.
+
+Open Challenges: 
+Exploring the diverse landscape of cybersecurity in autonomous vehicles, Babajide J Asaju (2024) and Vipin Kumar Kukkala et al., (2022) offer unique insights into the challenges and solutions within this dynamic domain. While Asaju's  (2024) work delves into the complexities of safeguarding onboard systems, communication networks, and data privacy within the context of smart city ecosystems, Kukkala et al., (2022) offer a broader perspective, addressing challenges concerning the implementation, integration, and overarching cybersecurity framework within autonomous vehicle systems.
+Asaju's (2022) discussion emphasizes the dynamic nature of the cybersecurity landscape, highlighting the continuous emergence of new threat vectors, persistent threats, and sophisticated malware. Additionally, he underscores the complexity of modern systems, necessitating a comprehensive understanding of interconnected devices, cloud computing, and the Internet of Things (IoT). Insider threats, compliance with regulatory standards, resource constraints, lack of skilled personnel, and the importance of integration and collaboration among stakeholders are likely presented as formidable challenges in his framework.
+In contrast, Kukkala et al., (2024) focus on challenges related to implementing cybersecurity measures across various components of autonomous vehicle systems. They highlight the need for standardized protocols and frameworks, considering the complexity and interdisciplinary nature of AV technology. Additionally, their discussion underscores the importance of seamless integration and collaboration among different stakeholders to effectively manage cybersecurity risks in autonomous vehicles.
+Addressing these open challenges in cybersecurity risk management requires a multifaceted approach, involving continuous research, innovation, investment in personnel and technology, and collaboration among stakeholders across industries and sectors.
+Therefore, this study will focus on the following research questions:
+RQ1. What are the current issues, challenges, and impact of Cybersecurity threats in IoT decides? 
+RQ2. How to address Cybersecurity threats in IoT in vehicle automation?
+Answering these questions assists in informed decision-making regarding the implementation of cybersecurity measures in IoT devices and vehicle automation systems, safeguarding against potential threats and ensuring the integrity and reliability of operations.
+
+
+
+
+
+
+
+
+
+References:
+Altulaihan, E., Almaiah, M.A. and Aljughaiman, A. (2022) ‘Cybersecurity threats, countermeasures and mitigation techniques on the IOT: Future Research Directions’, Electronics, 11(20), p. 3330. doi:10.3390/electronics11203330.
+
+Abomhara, M. and Koien, G.M. (2015) ‘Cyber security and the internet of things: Vulnerabilities, threats, intruders and attacks’, Journal of Cyber Security and Mobility, 4(1), pp. 65–88. doi:10.13052/jcsm2245-1439.414.
+
+Asaju, Babajide. (2024). Cybersecurity Frameworks for Autonomous Vehicle Systems: Safeguarding Onboard Systems, Communication Networks, and Data Privacy in Smart City Ecosystems Introduction. 4. pp. 27–48. Doi:10.55662/IOTECJ.2024.4101.
+
+BPI (2021) An introduction to IOT architecture and its benefits for enterprises!, BPI - The destination for everything process related. Available at: https://www.businessprocessincubator.com/content/an-introduction-to-iot-architecture-and-its-benefits-for-enterprises/ (Accessed: 29 April 2024).
+
+Chowdhury, M., Islam, M. and Khan, Z. (2019) ‘Security of Connected and Automated Vehicles’, The Bridge. National Academy of Engineering, 49(3), pp. 46–56. Available from: https://www.nae.edu/216540/Security-of-Connected-and-Automated-Vehicles [Accessed 22 April 2024].
+
+Garakani, H.G., Moshiri, B. and Safavi-Naeini, S. (2018) ‘Cyber security challenges in autonomous vehicle: Their impact on RF sensor and Wireless Technologies’, 2018 18th International Symposium on Antenna Technology and Applied Electromagnetics (ANTEM) [Preprint]. doi:10.1109/antem.2018.8572847.
+
+Islam, T. et al. (2023) ‘A review of cyber attacks on sensors and perception systems in Autonomous Vehicle’, Journal of Economy and Technology, 1, pp. 242–258. doi:10.1016/j.ject.2024.01.002.
+
+Karuppiah, K. et al. (2024) ‘A FSQCA-based framework for cybersecurity of connected and automated vehicles: Implications for Sustainable Development Goals’, Vehicles, 6(1), pp. 484–507. doi:10.3390/vehicles6010022.
+
+Kukkala, V.K., Thiruloga, S.V. and Pasricha, S. (2022) ‘Roadmap for cybersecurity in autonomous vehicles’, IEEE Consumer Electronics Magazine, 11(6), pp. 13–23. doi:10.1109/mce.2022.3154346.
+
+Lee, I. (2020) ‘Internet of things (IOT) cybersecurity: Literature review and IOT cyber risk management’, Future Internet, 12(9), p. 157. doi:10.3390/fi12090157.
+
+Pascale, F. et al. (2021) ‘Cybersecurity in automotive: An intrusion detection system in connected vehicles’, Electronics, 10(15), p. 1765. doi:10.3390/electronics10151765.
+
+Sun, X., Yu, F.R. and Zhang, P. (2022) ‘A survey on cyber-security of connected and autonomous vehicles (cavs)’, IEEE Transactions on Intelligent Transportation Systems, 23(7), pp. 6240–6259. doi:10.1109/tits.2021.3085297.
+
+Suo, D. et al. (2022) ‘Location-based schemes for mitigating cyber threats on connected and automated vehicles: A survey and design framework’, IEEE Transactions on Intelligent Transportation Systems, 23(4), pp. 2919–2937. doi:10.1109/tits.2020.3038755.
+
+Tweneboah-Koduah, S., Skouby, K.E. and Tadayoni, R. (2017) ‘Cyber security threats to IOT applications and service domains’, Wireless Personal Communications, 95(1), pp. 169–185. doi:10.1007/s11277-017-4434-6.
